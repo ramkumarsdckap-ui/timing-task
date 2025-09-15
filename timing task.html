@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Changelog Timeline</title>
+  <style>
+    /* CSS Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.con {
+  background-color: #1f1e1e;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #f8f8f8;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Timeline */
+.time {
+  position: relative;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.time::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #70ad9e;
+  transform: translateX(-50%);
+}
+
+.time-item {
+  position: relative;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.time-item .content {
+  width: 46%;
+  background-color: #000000;
+  padding: 15px 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0px 0px 2px 6px rgb(0, 0, 0);
+  border: 2px solid #5c5a5a;
+}
+
+.time-item .content:hover{
+    border: 2px solid#f7d6c7;
+    box-shadow: 0px 0px 2px 6px #535353;
+    transition-duration: 0.1s;
+    
+}
+
+.time-item.left .content {
+  margin-left: 0;
+  margin-right: auto;
+  text-align: right;
+}
+
+.time-item.right .content {
+  margin-right: 0;
+  margin-left: auto;
+  text-align: left;
+}
+
+.time-item::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 14px;
+  background-color: #1e1e1e;
+  border: 2px solid #7f5af0;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+/* Button */
+.button{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(37, 40, 41);
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  box-shadow: rgb(0, 0, 0) 0px 0px 2px 2px;
+  border: 3px solid #bbbaba;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color:#ffffff ;
+  border: 3px solid rgb(63, 63, 63);
+}
+</style>
+</head>
+
+<body>
+    <!-- Heading and Subtitle -->
+  <div class="con">
+    <h1>Changelog</h1>
+    <p class="subtitle">Here's everything we have shipped in the past few days</p>
+
+    <div class="time">
+      <!-- Timeline items -->
+      <div class="time-item left">
+        <div class="content">
+          <h3>September 3, 2024</h3>
+          <p>Announcing Projects on Frontend Roadmap</p>
+        </div>
+      </div>
+      <div class="time-item right">
+        <div class="content">
+          <h3>August 28, 2024</h3>
+          <p>Build your learning habits with learning streaks</p>
+        </div>
+      </div>
+      <div class="time-item left">
+        <div class="content">
+          <h3>August 25, 2024</h3>
+          <p>Git and GitHub Roadmap</p>
+        </div>
+      </div>
+      <div class="time-item right">
+        <div class="content">
+          <h3>August 22, 2024</h3>
+          <p>Submit your project solution and get feedback</p>
+        </div>
+      </div>
+      <div class="time-item left">
+        <div class="content">
+          <h3>August 15, 2024</h3>
+          <p>Backend Project Ideas</p>
+        </div>
+      </div>
+      <div class="time-item right">
+        <div class="content">
+          <h3>August 10, 2024</h3>
+          <p>Redis Roadmap</p>
+        </div>
+      </div>
+      <div class="time-item left">
+        <div class="content">
+          <h3>August 1, 2024</h3>
+          <p>Changelog page to help you stay in the loop</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="button">
+      <a href="#" class="btn">Visit Complete Changelog</a>
+    </div>
+  </div>
+
+</body>
+</html>
